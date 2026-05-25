@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <img id="logo" src="./logo.jpg"/>
+        <nav>
+            <ul>
+               <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./contato.html">
+                    <li>Contato</li>
+                </a>
+                <a href="./elenco.html">
+                    <li>Elenco</li>
+                </a>
+                <a href="./comentarios.html">  
+                    <li>Comentários</li>
+                </a>
+            </ul>
+        </nav>   
+        <div class="mobile-menu">
+            ☰
+        </div>
+
+        <div class="mobile-options">
+            <a href="./index.html">Home</a>
+            <a href="./contato.html">Contato</a>
+            <a href="./elenco.html">Elenco</a>
+            <a href="./comentarios.html">Comentários</a>
+        </div>
+    </header>
+    
+    <div id="contatobanner">
+        <div id="contatocontainer">
+            <form action="./contato.html">
+                <label id="login">login</label>
+                <input id="click" type="text" name="contato" placeholder="nome">
+
+                <label id="senha"></label>
+                <input id="click" type="password" name="senha" placeholder="senha">
+
+                <button id="botao" type="submit">entrar</button>
+
+                <a id="actt">Contate-nos também via email
+                      contatobatman@gmail.com
+                </a>
+            </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img style="object-fit: contain;" id="logo" src="./logo.jpg" />
+        <span> Todos os direitos reservados ©</span>
+        <span> Desenvolvido por: <a href="https://github.com/souzajorgenicolas-dev" target="_blank" rel="noopener noreferrer">Jorge Souza</a></span>
+    </footer>
+    <script>
+        const menu = document.querySelector('.mobile-menu');
+        const options = document.querySelector('.mobile-options');
+
+        menu.addEventListener('click', () => {
+
+            if(options.classList.contains('active')){
+                options.classList.remove('active');
+            } else {
+                options.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
